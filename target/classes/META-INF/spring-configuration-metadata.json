@@ -1,0 +1,57 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney",
+      "type": "id.co.hanoman.config.YAMLConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.base-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.merchant-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.payment-type",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.url-inquiry",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.url-payment",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.url-token",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.url-update",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "id.co.hanoman.config.YAMLConfig",
+      "name": "emoney.username",
+      "type": "java.lang.String"
+    }
+  ]
+}

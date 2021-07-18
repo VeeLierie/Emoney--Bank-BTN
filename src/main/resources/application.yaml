@@ -1,6 +1,6 @@
 # prefix for all requests
 server:
-   port: 8093
+   port: 8099
 logging:
    level:
       org.springframework.web: INFO
@@ -11,20 +11,23 @@ spring:
   profiles:
     active: "dev"
 
-
 ---
 
 spring:
     profiles: prod
 name: prod-YAML
 environment: production
-sipatuh:
-    xkey: 98erk34dj
-    userid: 200
-    password: 123456
-    urlToken: http://BTNSIPATUH/api-dev/umrah/bank/login
-    timeout: 20000
-    baseUrl: http://BTNSIPATUH/api-dev/umrah/bank/  
+emoney:
+  username: 69b1d04f-50ca-456f-b155-75fc8e11167a
+  password: f735e5da-339e-4a54-8ccf-59ae6c35b1bbb
+  timeout: 20000
+  baseUrl: https://BTNEMONEY:5900
+  urlToken: /rest/pub/apigateway/jwt/getJsonWebToken
+  urlInquiry: /gateway/Payment/1.0/mdr/merchant/gateway/api/payment/inquiry
+  urlPayment: /gateway/Payment/1.0/mdr/merchant/gateway/api/payment/posting
+  urlUpdate: /gateway/eMoneyCard/2.1/mdr/emoney/gateway/api/balance/update
+  paymentType: 108
+  merchantId: 506
 
 ---
 
@@ -32,10 +35,14 @@ spring:
     profiles: dev
 name: dev-YAML
 environment: development
-sipatuh:
-    xkey: 98erk34dj
-    userid: 200
-    password: 123456
-    urlToken: http://BTNSIPATUH/api-dev/umrah/bank/login
-    timeout: 20000
-    baseUrl: http://BTNSIPATUH/api-dev/umrah/bank/
+emoney:
+  username: 69b1d04f-50ca-456f-b155-75fc8e11167a
+  password: f735e5da-339e-4a54-8ccf-59ae6c35b1bb
+  timeout: 20000
+  baseUrl: https://BTNEMONEY:5900
+  urlToken: /rest/pub/apigateway/jwt/getJsonWebToken
+  urlInquiry: /gateway/Payment/1.0/mdr/merchant/gateway/api/payment/inquiry
+  urlPayment: /gateway/Payment/1.0/mdr/merchant/gateway/api/payment/posting
+  urlUpdate: /gateway/eMoneyCard/2.1/mdr/emoney/gateway/api/balance/update
+  paymentType: 108
+  merchantId: 506

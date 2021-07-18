@@ -7,68 +7,26 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties("sipatuh")
+@ConfigurationProperties("emoney")
 
 public class YAMLConfig {
   
-	private String xkey;
-	
-	private String userid;
+	private String username;
 	private String password;
-
-	private String tokenisi;
-	private String urlToken;
-
-	private int timeout;
 	private String baseUrl;
+	private String urlToken;
+	private String urlInquiry;
+	private String urlPayment;
+	private String urlUpdate;
+	private String paymentType;
+	private String merchantId;
 
-	public String getXkey() {
-		return xkey;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setXkey(String xkey) {
-		this.xkey = xkey;
-	}
-
-
-	public String getTokenIsi() {
-		return tokenisi;
-	}
-
-	public void setTokenIsi(String tokenisi) {
-		this.tokenisi = tokenisi;
-	}
-
-	public String getUrlToken() {
-		return urlToken;
-	}
-
-	public void setUrlToken(String urlToken) {
-		this.urlToken = urlToken;
-	}
-
-	public int getTimeout() {
-		return timeout;
-	}
-
-	public void setTimeout(int timeout) {
-		this.timeout = timeout;
-	}
- 
-	public String getBaseUrl() {
-		return baseUrl;
-	}
-
-	public void setBaseUrl(String baseUrl) {
-		this.baseUrl = baseUrl;
-	}
-
-	public String getUserid() {
-		return userid;
-	}
-
-	public void setUserid(String userid) {
-		this.userid = userid;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPassword() {
@@ -77,5 +35,61 @@ public class YAMLConfig {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getBaseUrl() {
+		return baseUrl;
+	}
+
+	public void setBaseUrl(String baseUrl) {
+		this.baseUrl = baseUrl;
+	}
+
+	public String getUrlInquiry() {
+		return urlInquiry;
+	}
+
+	public void setUrlInquiry(String urlInquiry) {
+		this.urlInquiry = urlInquiry;
+	}
+
+	public String getUrlPayment() {
+		return urlPayment;
+	}
+
+	public void setUrlPayment(String urlPayment) {
+		this.urlPayment = urlPayment;
+	}
+
+	public String getUrlUpdate() {
+		return urlUpdate;
+	}
+
+	public void setUrlUpdate(String urlUpdate) {
+		this.urlUpdate = urlUpdate;
+	}
+
+	public String getPaymentType() {
+		return paymentType;
+	}
+
+	public void setPaymentType(String paymentType) {
+		this.paymentType = paymentType;
+	}
+
+	public String getMerchantId() {
+		return merchantId;
+	}
+
+	public void setMerchantId(String merchantId) {
+		this.merchantId = merchantId;
+	}
+
+	public String getUrlToken() {
+		return urlToken;
+	}
+
+	public void setUrlToken(String urlToken) {
+		this.urlToken = urlToken;
 	}
 }
